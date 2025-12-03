@@ -116,10 +116,10 @@ const slides = [
 const Explore = () => {
   return (
     <section
-      className="relative py-32 overflow-hidden bg-cover bg-center "
+      className="relative  overflow-hidden bg-cover bg-center "
       style={{
         backgroundImage:
-          "url('/Kopotakkho-Homes-Ltdi-img._files/Thumb-Image-SM.png')",
+          "url('/Kopotakkho-Homes-Ltdi-img._files/Banner-4.jpg')",
         backgroundPosition: "center -500px",
       }}
     >
@@ -128,8 +128,8 @@ const Explore = () => {
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
         <h2 className="fancy-title text-left text-3xl md:text-5xl lg:text-[56px] leading-tight text-white mb-12">
-          <span className="block">Bringing your ideal lifestyle</span>
-          <span className="block ml-48">To life with our homes</span>
+          <span className="block">Explore our exclusively</span>
+          <span className="block ml-48">Stunning projects</span>
         </h2>
 
         {/* Swiper row (3 visible on desktop) */}

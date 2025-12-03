@@ -11,15 +11,15 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Projects", href: "/projects" },
-    { name: "Media", href: "/media" },
-    { name: "Career", href: "/career" },
-    { name: "Contact", href: "/contact" },
-    { name: "Completed", href: "/completed" },
-    { name: "Ongoing", href: "/ongoing" },
-    { name: "Upcoming", href: "/upcoming" },
+    { name: "Home", href: "/", id: "home" },
+    { name: "About", href: "/about", id: "about" },
+    { name: "Projects", href: "/projects", id: "projects" },
+    { name: "Media", href: "/media", id: "media" },
+    { name: "Career", href: "/career", id: "career" },
+    { name: "Contact", href: "/contact", id: "contact" },
+    { name: "Completed", href: "/completed", id: "completed" },
+    { name: "Ongoing", href: "/ongoing", id: "ongoing" },
+    { name: "Upcoming", href: "/upcoming", id: "upcoming" },
   ];
 
   return (
@@ -45,30 +45,23 @@ const Header = () => {
             <div className="flex items-center space-x-4">
               <a
                 href="tel:01810-008010"
-                className="flex items-center gap-2 text-white font-medium text-foreground hover:text-gray-300 transition-colors"
+                className="flex items-center gap-2 text-white font-medium hover:text-gray-300 transition-colors"
               >
-                <span>01810-008010</span>
+                <span className="text-xl">01810-008010</span>
               </a>
 
               {/* Menu Button (ALWAYS visible on ALL screen sizes) */}
-              <Button
-                variant="ghost"
-                size="icon"
-                className="
-    text-white font-extrabold
-    transition-all duration-500 ease-in-out
-    
-    rounded-full
-    p-2
-  "
+              {/* Menu Button (ALWAYS visible on ALL screen sizes) */}
+              <button
+                className="text-white transition-all duration-300 hover:scale-110"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               >
                 {isMenuOpen ? (
-                  <X className="w-10 h-10 transition-all duration-500" />
+                  <X className="w-10 h-10 transition-transform duration-300 ease-out " />
                 ) : (
-                  <Menu className="w-10 h-10 transition-all duration-500" />
+                  <Menu className="w-10 h-10 transition-all duration-300 ease-out hover:translate-x-2   " />
                 )}
-              </Button>
+              </button>
             </div>
           </div>
         </div>

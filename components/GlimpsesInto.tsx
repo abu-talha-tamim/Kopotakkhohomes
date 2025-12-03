@@ -23,15 +23,18 @@ this unparalleled professionalism and unceasing support!`,
   {
     id: 2,
     image: "/Kopotakkho-Homes-Ltdi-img._files/Mr.-Mrs.-Shanjib-Kumar-Shaha.jpg",
-    quote:
-      "I am a client of your esteemed project of Hydra, Bashundhara R/A. I am herewith expressing my utmost satisfaction for your relentless efforts.",
+    quote: `I am a client of your esteemed project of Hydra, Bashundhara R/A. I am herewith expressing my utmost
+satisfaction for your relentless efforts and supervision to hand over the endeavor in time with excellent
+and expected quality. This will uplift your commitment to conduct a long-term relationship with
+satisfaction and thanks. This is a sign of your sincere and honest attitude to your clients.`,
     author: "Mr. & Mrs. Shanjib Kumar Shaha",
     subtitle: "Honorable Buyer",
   },
   {
     id: 3,
     image: "/Kopotakkho-Homes-Ltdi-img._files/Mr.-Mrs.-Md.-Shafiqul-Islam.jpg",
-    quote: `Thank you so much for giving us your full support on the Hydra project. We are very happy to get the apartment with an on-time handover.`,
+    quote: `Thank you so much for giving us your full support on the Hydra project. We are very happy to get the
+apartment with an on-time handover and your best effort. We pray for your success.`,
     author: "Mr. & Mrs. Md. Shafiqul Islam",
     subtitle: "Honorable Buyer",
   },
@@ -39,7 +42,11 @@ this unparalleled professionalism and unceasing support!`,
     id: 4,
     image:
       "/Kopotakkho-Homes-Ltdi-img._files/Md.-Johurul-Islam-Mrs.-Merina-Jahan.jpg",
-    quote: `I am one of the landowners of your project "Bandhan" in Bashundhara R/A. Thank you and your people for the support.`,
+    quote: `“I am one of the landowners of your project ”Bandhan” in Bashundhara R/A. I think the presence of
+this type of employee in Kopotakkho Homes Ltd. will help to maintain your good reputation in the
+market. Thank you and your people to provide us with such support and service.”
+
+`,
     author: "Md. Johurul Islam & Mrs. Merina Jahan",
     subtitle: "Honorable Buyer",
   },
