@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Container from "./Container";
 import { useState } from "react";
-import { Button } from "./ui/button";
+
 import { Menu, X, Phone } from "lucide-react";
 import SideMenu from "./SideMenu";
 import Image from "next/image";
