@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
+
 import Image from "next/image";
+import Swipers from "./Swipers";
 
 export default function About() {
   return (
@@ -9,7 +11,7 @@ export default function About() {
       <header className="relative w-full h-[50vh] md:h-[60vh] lg:h-[80vh] overflow-hidden">
         {/* full-bleed image using next/image fill */}
         <Image
-          src="/Kopotakkho-Homes-Ltdi-img._files/10.jpg"
+          src="/Kopotakkho-Homes-Ltdi-img._files/About-banner.jpg"
           alt="Kopotakkho Homes - meeting room"
           fill
           className="object-cover object-center"
@@ -93,7 +95,7 @@ export default function About() {
               {/* The wrapper must have an explicit min-height on small screens so it looks good */}
               <div className="relative w-full h-full min-h-[560px] lg:min-h-0">
                 <Image
-                  src="/Kopotakkho-Homes-Ltdi-img._files/9.jpg" // update path if needed
+                  src="/Kopotakkho-Homes-Ltdi-img._files/Mask-Group-94.jpg" // update path if needed
                   alt="Chess Strategy"
                   fill
                   className="object-cover object-center"
@@ -103,7 +105,96 @@ export default function About() {
             </div>
           </div>
         </section>
-        <section></section>
+        <section>
+          <Swipers />
+        </section>
+        <section className="max-w-6xl mx-auto px-6 lg:px-0 py-16">
+          {/* Section heading */}
+          <h2 className="text-3xl lg:text-4xl font-light tracking-tight mb-12">
+            Meet our dynamic team
+          </h2>
+
+          <div className="space-y-20">
+            {/* CARD 1 : image left / text right */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+              {/* Image left */}
+              <div className="relative w-full h-[314.521px] overflow-hidden">
+                <Image
+                  src="/Kopotakkho-Homes-Ltdi-img._files/IMG_20250929_171628.png"
+                  alt="Mr. Milon Hossain"
+                  fill
+                  priority
+                  className="object-contain"
+                />
+              </div>
+
+              {/* Text right */}
+              <div className="space-y-6 text-sm leading-relaxed text-slate-700">
+                <p>
+                  I think of myself as a seasoned sales professional with a
+                  remarkable 18-year track record in the Real Estate industry.
+                  In October 2022, I joined KHL as the Senior General Manager,
+                  leading the sales division. Prior to this, I held the position
+                  of Deputy General Manager (Head of General Sales) at Rupayan
+                  Housing Estate Ltd. and gained valuable experience as a
+                  Medical Promotion Executive at Beximco Pharmaceuticals Ltd.
+                </p>
+                <p>
+                  My approach to business revolves around visionary thinking,
+                  profitability, and hard work fueled by a deep passion for
+                  success. I am dedicated to establishing KHL as a premier
+                  company in Bangladesh, renowned for delivering the best
+                  products and services in all aspects.
+                </p>
+
+                {/* Name + designation */}
+                <div className="pt-4">
+                  <p className="text-lg font-light">Mr. Milon Hossain</p>
+                  <p className="text-xs uppercase tracking-[0.2em] text-slate-500">
+                    Director · Sales &amp; CR
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 2 : text left / image right */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+              {/* Text left on desktop */}
+              <div className="order-2 md:order-1 space-y-6 text-sm leading-relaxed text-slate-700">
+                <p>
+                  We are delighted to share our go-to-market strategy focused on
+                  five key areas: Corporate, Tech Digital & Brands, Dispute
+                  Resolution, Private Wealth, and Real Estate. Our strategic
+                  priorities include the creation of a new client program,
+                  internationalizing our business development and marketing
+                  approach, supporting the development of our US strategy, and
+                  launching a brand repositioning initiative. These efforts are
+                  shaping the future of KHL, driving our growth, and ensuring we
+                  provide exceptional services to our valued clients. We are
+                  excited about the limitless possibilities ahead and invite you
+                  to join us on this journey of excellence.
+                </p>
+
+                <div className="pt-4">
+                  <p className="text-lg font-light">Mr. Tanvir Ahasan Tanmoy</p>
+                  <p className="text-xs uppercase tracking-[0.2em] text-slate-500">
+                    Director · Marketing
+                  </p>
+                </div>
+              </div>
+
+              {/* Image right on desktop */}
+              <div className="order-1 md:order-2 relative w-full h-[314.521px] overflow-hidden">
+                <Image
+                  src="/Kopotakkho-Homes-Ltdi-img._files/Tonmoy-sir.jpg"
+                  alt="Mr. Tanvir Ahasan Tanmoy"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
