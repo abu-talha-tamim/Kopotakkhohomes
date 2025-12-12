@@ -1,7 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
-import AOS from "aos";
 import "aos/dist/aos.css";
 
 import GlimpsesInto from "@/components/GlimpsesInto";
@@ -12,15 +10,8 @@ import OurLatestEvent from "@/components/OurLatestEvent";
 import Explore from "@/components/Explore ";
 
 const Home = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: true,
-    });
-  }, []);
-
   return (
-    <header data-aso="flip-up">
+    <header>
       <HomeBanner />
       <Lifestyle />
       <Explore />
