@@ -14,13 +14,13 @@ import Explore from "@/components/Explore ";
 const Home = () => {
   useEffect(() => {
     AOS.init({
-      duration: 800, // animation duration
-      once: true, // run animation only once
+      duration: 800,
+      once: true,
     });
   }, []);
 
   return (
-    <header>
+    <header data-aso="flip-up">
       <HomeBanner />
       <Lifestyle />
       <Explore />
